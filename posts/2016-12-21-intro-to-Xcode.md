@@ -32,19 +32,19 @@ tags:
 和其他平台不一样，开发macOS的应用程序必须安装一个工具——即Xcode。Xcode是一把开发iOS、watchOS、tvOS及macOS app的瑞士军刀，它包含你所需的一切。  
 如果你没有安装 `Xcode` ，点击桌面左上角菜单栏的苹果图标并选择 `App Store` 打开Mac App Store。  
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/AppStore.png)<br/>  
+![](../images/AppStore.png)<br/>  
 
 
 查找并获取Xcode：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/appstroe_xcode.png)<br/>  
+![](../images/appstroe_xcode.png)<br/>  
 
 
 待Xcode下载并自动安装完成后，从 `Launchpad` 或 `应用程序` 文件夹中启动Xcode。当你第一次启动Xcode时，会要求你安装一些附加组件，按要求安装就可以了。启动Xcode后你会看到欢迎界面，如下：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/xcode_welcome.png)<br/>  
+![](../images/xcode_welcome.png)<br/>  
 
 
 恭喜你！你已经获得了Xcode这个神器！继续学习，我们将了解它能做什么。
@@ -54,7 +54,7 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 当我们打开Xcode时可以创建一个新的项目或者打开一个已有的项目。你也可以在文件夹中直接双击一个 `.xcodeproj` 或 `.playground` 文件来打开他们。  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/open_finder-480x269.png)<br/>  
+![](../images/open_finder-480x269.png)<br/>  
 
 
 ### 创建一个新的app
@@ -62,13 +62,13 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 在Xode的欢迎界面中，点击 `Create a new Xcode project` 创建新项目：
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/xcode_welcome.png)<br/>  
+![](../images/xcode_welcome.png)<br/>  
 
 
 模板选择器可以帮助你利用预设模板创建新项目，在 `macOS` 选项卡中你可以看到三种不同的核心macOS app类型：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/temp_chooser.png)<br/>  
+![](../images/temp_chooser.png)<br/>  
 
 
 这三种macOS app类型分别是：  
@@ -78,7 +78,7 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 选择 `Cocoa Application` 并点击 `Next`，在下一界面中设置产品名称为 `HelloWorld`，设置编程语言为 `Swift` ，选定 `Use Storyboards` 的复选框：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/create_options.png)<br/>  
+![](../images/create_options.png)<br/>  
 
 
 最后再点击 `Next`，并选择你要保存项目的位置。  
@@ -89,13 +89,13 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 这涉及到将源代码编译为机器码，打包所需资源，然后再执行程序。这个过程很复杂，但是幸运的是有Xcode的鼎力相助，构建和运行你的项目就像播放音乐一样简单，点击Xcode项目界面左上角的播放按钮：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/build_run.png)<br/>  
+![](../images/build_run.png)<br/>  
 
 
 或者你也可以使用快捷键 `⌘R`。  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/runAnewPro.png)<br/>  
+![](../images/runAnewPro.png)<br/>  
 
 
 ***提示：**在你第一次在Xcode中构建和运行app时，会提示 `Enable Developer Mode on this Mac?` 你最好选择 `Enable` , `Developer Mode` 即开发人员模式允许Xcode在正在运行的进程中附加一个调试器（Debugger），这在构建应用程序时非常有用！*  
@@ -106,33 +106,33 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 在项目导航中找到 `Main.storyboard` 文件并点选它：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/proNavigator.png)<br/>  
+![](../images/proNavigator.png)<br/>  
 
 
 这样就在IB中打开了storyboard文件，你可以总览你的app：
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/newAppIB.png)<br/>  
+![](../images/newAppIB.png)<br/>  
 
 
 最下面这个组件（名为“View Controller”）表示你的app的可视化外观。我们将给它添加一个文本标签来完善我们的“HelloWorld”app。
 在Xcode窗口界面的右下角找到 `Object Library` 对象库，在搜索框中输入 `label` 然后选择 `Label` 条目：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/labelEntry.png)<br/>  
+![](../images/labelEntry.png)<br/>  
 
 
 把 `Label` 条目从对象库拖动到 `View Controller` 的场景画布上：  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/labelOnViewController.png)<br/>  
+![](../images/labelOnViewController.png)<br/>  
 
 
 `Label` 就是文本标签，表示没有用户交互的静态文本，适合你的“HelloWord”app。我们不希望它只是显示“Label”这几个字，所以我们要设置一下它。
 要配置标签，请选择它，然后打开Xcode窗口右上方的属性检查器（第4个选项卡）。将标题 `Title` 设置为“Hello macOS”，并将字体 `Font` 更新为“System 40”
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/labelConfig.png)<br/>  
+![](../images/labelConfig.png)<br/>  
 
 
 你可能会看到标签的大小不正确 ,接下来需要修复该错误，并将其设置到正确的位置。  
@@ -140,14 +140,14 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 再次选择文本标签，然后单击底部栏中的对齐按钮 `Align`（左起第三个）。 同时勾选“Horizontally in Container”和“Vertically in Container”复选框，并确保它们都设置为0。在“Update Frames”选择框中选择“Items of New Constraints”，最后单击“Add 2 Constraints”按钮。  
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/alignButton.png)<br/>  
+![](../images/alignButton.png)<br/>  
 
 
 这样就更新了storyboard，以调整标签大小并正确定位。  
 构建和运行app（通过单击播放按钮或使用 `⌘R` 快捷键）查看您的“HelloWorld macOS app”。
 
 <br/>  
-![](https://raw.githubusercontent.com/zhi-ming-zhang/zhi-ming-zhang.github.io/master/images/helloMacOS.png)<br/>  
+![](../images/helloMacOS.png)<br/>  
 
 
 **搞定！**
