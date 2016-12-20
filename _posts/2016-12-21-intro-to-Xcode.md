@@ -17,34 +17,34 @@ tags:
 
 ---
 ***提示：**在开始本教程学习之前你需要做以下准备工作：
-- **如果你是Swift新手**，本教程需要Swift编程语言的相关知识。
-- **如果你有iOS开发经验**，你可以粗滤浏览第一部分甚至直接跳到下一部分。
-- **如果你没有iOS或macOS开发经验**，希望你能认真学习。*
+- 1.**如果你是Swift新手**，本教程需要Swift编程语言的相关知识。
+- 2.**如果你有iOS开发经验**，你可以粗滤浏览第一部分甚至直接跳到下一部分。
+- 3.**如果你没有iOS或macOS开发经验**，希望你能认真学习。*
 
 ## 剃牦牛
 工欲善其事，必先利其器。搞开发需要配置开发环境，这个过程有时候可能会比较繁复，我们称为“剃牦牛”（Yak Shaving），但是正如前面说到的：“苹果公司现在已经将macOS app（应用程序）开发过程做得难以置信的简便了”，所以环境配置也非常简单。成为一个macOS开发者之前，你只需要获得以下工具：
-- **安装了macOS系统的Mac，**一般情况下macOS（2016年，苹果公司将操作系统重命名为“macOS”）操作系统只能运行于苹果电脑上，所以你需要一台Mac来开发和运行macOS app。如果你想了解改购买哪种Mac比较合适，我认为Mac Mini再额外添加内存和固态硬盘（或Fusion drive设备）是一种经济与性能的平衡选择。
-- **一个AppleID，**用于在苹果App Store下载相关工具。
-- **Xcode，**这是一个用于macOS app开发的IDE和工具链，我们将学习如何安装Xcode。
+- 1.**安装了macOS系统的Mac，**一般情况下macOS（2016年，苹果公司将操作系统重命名为“macOS”）操作系统只能运行于苹果电脑上，所以你需要一台Mac来开发和运行macOS app。如果你想了解改购买哪种Mac比较合适，我认为Mac Mini再额外添加内存和固态硬盘（或Fusion drive设备）是一种经济与性能的平衡选择。
+- 2.**一个AppleID，**用于在苹果App Store下载相关工具。
+- 3.**Xcode，**这是一个用于macOS app开发的IDE和工具链，我们将学习如何安装Xcode。
 
 
 ### 获取工具
 和其他平台不一样，开发macOS的应用程序必须安装一个工具——即Xcode。Xcode是一把开发iOS、watchOS、tvOS及macOS app的瑞士军刀，它包含你所需的一切。  
 如果你没有安装 `Xcode` ，点击桌面左上角菜单栏的苹果图标并选择 `App Store` 打开Mac App Store。  
 <div align=center>
-![App Store]({{ site.url }}/images/AppStore.png)<br/>  
+![App Store](../images/AppStore.png)<br/>  
 </div>  
 
 查找并获取Xcode：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/appstroe_xcode.png)<br/>  
+![App Store](../images/appstroe_xcode.png)<br/>  
 </div>  
 
 待Xcode下载并自动安装完成后，从 `Launchpad` 或 `应用程序` 文件夹中启动Xcode。当你第一次启动Xcode时，会要求你安装一些附加组件，按要求安装就可以了。启动Xcode后你会看到欢迎界面，如下：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/xcode_welcome.png)<br/>  
+![App Store](../images/xcode_welcome.png)<br/>  
 </div>  
 
 恭喜你！你已经获得了Xcode这个神器！继续学习，我们将了解它能做什么。
@@ -54,7 +54,7 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 当我们打开Xcode时可以创建一个新的项目或者打开一个已有的项目。你也可以在文件夹中直接双击一个 `.xcodeproj` 或 `.playground` 文件来打开他们。  
 
 <div align=center>
-![App Store]({{ site.url }}/images/open_finder-480x269.png)<br/>  
+![App Store](../images/open_finder-480x269.png)<br/>  
 </div>  
 
 ### 创建一个新的app
@@ -62,13 +62,13 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 在Xode的欢迎界面中，点击 `Create a new Xcode project` 创建新项目：
 
 <div align=center>
-![App Store]({{ site.url }}/images/xcode_welcome.png)<br/>  
+![App Store](../images/xcode_welcome.png)<br/>  
 </div>  
 
 模板选择器可以帮助你利用预设模板创建新项目，在 `macOS` 选项卡中你可以看到三种不同的核心macOS app类型：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/temp_chooser.png)<br/>  
+![App Store](../images/temp_chooser.png)<br/>  
 </div>  
 
 这三种macOS app类型分别是：  
@@ -78,7 +78,7 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 选择 `Cocoa Application` 并点击 `Next`，在下一界面中设置产品名称为 `HelloWorld`，设置编程语言为 `Swift` ，选定 `Use Storyboards` 的复选框：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/create_options.png)<br/>  
+![App Store](../images/create_options.png)<br/>  
 </div>  
 
 最后再点击 `Next`，并选择你要保存项目的位置。  
@@ -89,13 +89,13 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 这涉及到将源代码编译为机器码，打包所需资源，然后再执行程序。这个过程很复杂，但是幸运的是有Xcode的鼎力相助，构建和运行你的项目就像播放音乐一样简单，点击Xcode项目界面左上角的播放按钮：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/build_run.png)<br/>  
+![App Store](../images/build_run.png)<br/>  
 </div>  
 
 或者你也可以使用快捷键 `⌘R`。  
 
 <div align=center>
-![App Store]({{ site.url }}/images/runAnewPro.png)<br/>  
+![App Store](../images/runAnewPro.png)<br/>  
 </div>  
 
 ***提示：**在你第一次在Xcode中构建和运行app时，会提示 `Enable Developer Mode on this Mac?` 你最好选择 `Enable` , `Developer Mode` 即开发人员模式允许Xcode在正在运行的进程中附加一个调试器（Debugger），这在构建应用程序时非常有用！*  
@@ -106,33 +106,33 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 在项目导航中找到 `Main.storyboard` 文件并点选它：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/proNavigator.png)<br/>  
+![App Store](../images/proNavigator.png)<br/>  
 </div>  
 
 这样就在IB中打开了storyboard文件，你可以总览你的app：
 
 <div align=center>
-![App Store]({{ site.url }}/images/newAppIB.png)<br/>  
+![App Store](../images/newAppIB.png)<br/>  
 </div>  
 
 最下面这个组件（名为“View Controller”）表示你的app的可视化外观。我们将给它添加一个文本标签来完善我们的“HelloWorld”app。
 在Xcode窗口界面的右下角找到 `Object Library` 对象库，在搜索框中输入 `label` 然后选择 `Label` 条目：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/labelEntry.png)<br/>  
+![App Store](../images/labelEntry.png)<br/>  
 </div>  
 
 把 `Label` 条目从对象库拖动到 `View Controller` 的场景画布上：  
 
 <div align=center>
-![App Store]({{ site.url }}/images/labelOnViewController.png)<br/>  
+![App Store](../images/labelOnViewController.png)<br/>  
 </div>  
 
 `Label` 就是文本标签，表示没有用户交互的静态文本，适合你的“HelloWord”app。我们不希望它只是显示“Label”这几个字，所以我们要设置一下它。
 要配置标签，请选择它，然后打开Xcode窗口右上方的属性检查器（第4个选项卡）。将标题 `Title` 设置为“Hello macOS”，并将字体 `Font` 更新为“System 40”
 
 <div align=center>
-![App Store]({{ site.url }}/images/labelConfig.png)<br/>  
+![App Store](../images/labelConfig.png)<br/>  
 </div>  
 
 你可能会看到标签的大小不正确 ,接下来需要修复该错误，并将其设置到正确的位置。  
@@ -140,14 +140,14 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 再次选择文本标签，然后单击底部栏中的对齐按钮 `Align`（左起第三个）。 同时勾选“Horizontally in Container”和“Vertically in Container”复选框，并确保它们都设置为0。在“Update Frames”选择框中选择“Items of New Constraints”，最后单击“Add 2 Constraints”按钮。  
 
 <div align=center>
-![App Store]({{ site.url }}/images/alignButton.png)<br/>  
+![App Store](../images/alignButton.png)<br/>  
 </div>  
 
 这样就更新了storyboard，以调整标签大小并正确定位。  
 构建和运行app（通过单击播放按钮或使用 `⌘R` 快捷键）查看您的“HelloWorld macOS app”。
 
 <div align=center>
-![App Store]({{ site.url }}/images/helloMacOS.png)<br/>  
+![App Store](../images/helloMacOS.png)<br/>  
 </div>  
 
 **搞定！**
