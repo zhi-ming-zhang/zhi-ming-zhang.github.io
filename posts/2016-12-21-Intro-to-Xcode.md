@@ -168,4 +168,4 @@ Xcode是一个Integrated Development Environment (IDE)，它是一个从源代�
 <br/>  
 
 
-**搞定！**
+**Done！学习下一部分：[macOS开发入门教程之二：macOS App剖析](./2016-12-21-macOS-App-Anatomy.md)**
