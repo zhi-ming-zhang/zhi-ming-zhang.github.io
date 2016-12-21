@@ -8,6 +8,7 @@ tags:
 - Xcode
 - 教程
 ---
+# macOS开发入门教程之二：macOS App剖析
 欢迎回到《macOS开发入门教程》！
 - 1.在第一部分教程中，我们学习了如何获得macOS app开发所需的工具，以及探索Xcode，学习了如何构建和运行macOS app以及UI设计。  
 - 2.在第二部门教程中，我们将在Xcode中剖析macOS app的组件。 从macOS app启动的方式，到UI如何构建再而如何用户处理交互进行一个系统性了解。  
@@ -57,7 +58,7 @@ tags:
 ![](../images/windowController.png)
 <br/>  
 
-窗口控制器（window controllers）是通过NSWindowController类（NSWindowController class）来表现的。当你在配置不同的窗口时，通常要创建不同的子类（subclasses）来实现不同的需求。
+窗口控制器（window controllers）是通过NSWindowController类（NSWindowController class）来表现的。当你在配置不同的窗口时，通常要创建不同的子类（subclasses）来实现不同的需求。  
 ### Views
 ### View Controllers
 ### Viewing collections
